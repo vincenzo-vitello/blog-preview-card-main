@@ -1,64 +1,69 @@
-@import url(https://fonts.google.com/specimen/Figtree);
-*{
+@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Figtree', sans-serif;
 }
-main{
+
+main {
     background-color: hsl(47, 88%, 63%);
     height: 100vh;
-    width: 100vw;
-    color: - hsl(0, 0%, 12%);
     display: flex;
-    justify-content:space-evenly;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: hsl(0, 0%, 12%);
 }
-.card{
+
+.card {
     background-color: hsl(60, 64%, 91%);
     padding: 20px;
     border-radius: 20px;
     border: 1px solid hsl(0, 0%, 12%);
     box-shadow: 10px 10px hsl(0, 0%, 12%);
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    row-gap: 20px;
+    gap: 20px;
     width: 350px;
 }
 
-.card img{
+.card img {
     object-fit: contain;
     border-radius: 10px;
 }
-.category_label{
+
+.category_label {
     padding: 10px 15px;
     background-color: hsl(47, 88%, 63%);
-    width: fit-content;
     border-radius: 5px;
     font-size: 14px;
     font-weight: 800;
+    width: max-content;
 }
-.published_on {
+
+.published_on, .title, .author {
     font-size: 14px;
 }
-.title{
+
+.title {
     font-weight: 850;
     font-size: 20px;
 }
-.author{
+
+.author {
     display: flex;
-    justify-content: left;
     align-items: center;
-    column-gap: 10px;
-    font-size: 14px;
+    gap: 10px;
     font-weight: 600;
 }
-.author > img {
+
+.author img {
     width: 30px;
 }
-.attribution a{
+
+.attribution a {
     color: hsl(0, 0%, 12%);
     font-weight: 800;
 }
