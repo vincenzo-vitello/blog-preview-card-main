@@ -1,0 +1,64 @@
+@import url(https://fonts.google.com/specimen/Figtree);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+}
+main{
+    background-color: hsl(47, 88%, 63%);
+    height: 100vh;
+    width: 100vw;
+    color: - hsl(0, 0%, 12%);
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    background-color: hsl(60, 64%, 91%);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid hsl(0, 0%, 12%);
+    box-shadow: 10px 10px hsl(0, 0%, 12%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 350px;
+}
+
+.card img{
+    object-fit: contain;
+    border-radius: 10px;
+}
+.category_label{
+    padding: 10px 15px;
+    background-color: hsl(47, 88%, 63%);
+    width: fit-content;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 800;
+}
+.published_on {
+    font-size: 14px;
+}
+.title{
+    font-weight: 850;
+    font-size: 20px;
+}
+.author{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.author > img {
+    width: 30px;
+}
+.attribution a{
+    color: hsl(0, 0%, 12%);
+    font-weight: 800;
+}
